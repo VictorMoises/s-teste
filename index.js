@@ -74,7 +74,7 @@ client.on("message", (message) => {
     }
 
     if(message.content.startsWith(prefix + "player")){
-        message.reply("**Servidor do nosso parceiro: https://discord.gg/swacvgR**");
+        message.member.send("**Servidor do nosso parceiro: https://discord.gg/swacvgR**");
     }
 
     if(message.content.startsWith(prefix + "avatar")){
