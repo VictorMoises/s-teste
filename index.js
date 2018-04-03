@@ -43,7 +43,7 @@ client.on("ready", () => {
         client.user.setGame(jogando[Math.round(Math.random() * jogando.length - 1)], "https://www.twitch.tv/zmarciogod");
         client.user.setStatus(statusIDO[Math.round(Math.random() * statusIDO.length - 1)]);
     }, 1 * 60 * 1000)
-    client.guilds.get("430528793493372928").channels.get("430452282098843658").sendMessage("**:warning: Reiniciado Automaticamente.**");
+    client.guilds.get("430084450983084054").channels.get("430452282098843658").sendMessage("**:warning: Reiniciado Automaticamente.**");
     
 });
 
