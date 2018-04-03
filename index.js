@@ -64,7 +64,7 @@ client.on("message", (message) => {
     if(message.content.startsWith(prefix + "ajuda")){
         message.channel.sendMessage({
             "embed": {
-              "description": "ㅤㅤㅤㅤㅤㅤㅤ**:pushpin:  HELP  :pushpin: ㅤㅤㅤㅤㅤㅤ\nㅤ\n**Comandos:**\n-ajuda\n-musicas\n-youtube\n-convite\n-avatar\n-player",
+              "description": "ㅤㅤㅤㅤㅤㅤ**:pushpin:  HELP  :pushpin: ㅤㅤㅤㅤㅤㅤ\nㅤ\n**Comandos**:\n-musicas\n-twitch\n-convite\n-avatar\n-player",
               "color": 16711680,
               "thumbnail": {
                 "url": "https://imgur.com/b733f0a5-5b66-4066-81e9-47afcb37e4df"
