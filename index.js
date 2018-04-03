@@ -31,19 +31,19 @@ client.on("ready", () => {
 
     const membrosNomes = string
     var statusIDO = ["idle", "dnd", "online", ]
-    var jogando = [`Digite -ajuda para ver meus comandos.`, `Divulgue nosso servidor, use: -convite`, `Divulgue nosso servidor e ganhe cargos especiais! ❣️ `, `Visite nosso canal no Youtube, digite: -youtube`, `Entre no servidor do nosso Parceiro, use: -athenos`, `Estamos com vagas na staff, para mais informações chame o dono do servidor no privado. `, `Para receber cargos de jogos, utilize a sala registro`, `Player South - Brasil ${client.users.size} membros, 😉 `] 
+    var jogando = [`Digite -ajuda os comandos.`, `Divulgue o servidor pros parças, use: -convite`, `Visite o Canal da Twitch do Noobs use: -twitch`, `Entre no servidor do nosso Parceiro, use: -player`, `Para receber cargos de jogos, utilize a sala registro`, `Servidor do Noobs - Brasil ${client.users.size} membros. `,] 
 
     console.log(`Conectado !`)
     setTimeout(function() {
-        console.log(`                   ---== PLAYER SOUTH ==---                 \n\nMembros: (${client.users.size}):\n\n${membrosNomes}`);
+        console.log(`                   ---== NOOBS EVOLUTION ==---                 \n\nMembros: (${client.users.size}):\n\n${membrosNomes}`);
     }, 2000)
-    client.user.setGame(jogando[Math.round(Math.random() * jogando.length - 1)], "https://www.twitch.tv/zmarciogod");
+    client.user.setGame(jogando[Math.round(Math.random() * jogando.length - 1)], "https://www.twitch.tv/noobsevolution");
     client.user.setStatus(statusIDO[Math.round(Math.random() * statusIDO.length - 1)]);
     setInterval(() => {
-        client.user.setGame(jogando[Math.round(Math.random() * jogando.length - 1)], "https://www.twitch.tv/zmarciogod");
+        client.user.setGame(jogando[Math.round(Math.random() * jogando.length - 1)], "https://www.twitch.tv/noobsevolution");
         client.user.setStatus(statusIDO[Math.round(Math.random() * statusIDO.length - 1)]);
     }, 1 * 60 * 1000)
-    client.guilds.get("430084450983084054").channels.get("430452282098843658").sendMessage("**:warning: Reiniciado Automaticamente.**");
+    client.guilds.get("304254306054307850").channels.get("430452282098843658").sendMessage("**:warning: Fui Reiniciado Automaticamente.**");
     
 });
 
@@ -53,28 +53,28 @@ client.login(token)
 
 client.on("message", (message) => {
 
-    if(message.content.startsWith(prefix + "youtube")){
-        message.reply("**Visite o canal do dono no youtube.\nhttps://www.youtube.com/channel/UCOcubNzQHrxIws_VSbV0bZQ :smile:**");
+    if(message.content.startsWith(prefix + "twitch")){
+        message.reply("**Canal da Twitch: https://www.twitch.tv/noobsevolution :smile:**");
     }
 
     if(message.content.startsWith(prefix + "convite")){
-        message.reply("**Convide seus amigos para o servidor: https://discord.gg/swacvgR**");
+        message.reply("**Convide seus amigos para o servidor: https://discord.gg/noobsevolution**");
     }
 
     if(message.content.startsWith(prefix + "ajuda")){
         message.channel.sendMessage({
             "embed": {
-              "description": "ㅤㅤㅤㅤㅤㅤㅤ**:fire: AJUDA :fire:**ㅤㅤㅤㅤㅤㅤㅤ\nㅤ\n**Comandos:**\n-ajuda\n-musicas\n-youtube\n-convite\n-avatar\n-athenos",
+              "description": "ㅤㅤㅤㅤㅤㅤㅤ**:pushpin:  HELP  :pushpin: ㅤㅤㅤㅤㅤㅤ\nㅤ\n**Comandos:**\n-ajuda\n-musicas\n-youtube\n-convite\n-avatar\n-player",
               "color": 16711680,
               "thumbnail": {
-                "url": "https://i.imgur.com/AjAfhx7.png"
+                "url": "https://imgur.com/b733f0a5-5b66-4066-81e9-47afcb37e4df"
               }
             }
           });
     }
 
-    if(message.content.startsWith(prefix + "athenos")){
-        message.reply("**Servidor do nosso parceiro: https://discord.gg/9WUTx4A**");
+    if(message.content.startsWith(prefix + "player")){
+        message.reply("**Servidor do nosso parceiro: https://discord.gg/swacvgR**");
     }
 
     if(message.content.startsWith(prefix + "avatar")){
@@ -103,26 +103,17 @@ client.on("message", (message) => {
     if(message.content.startsWith(prefix + "musicas")){
         message.channel.sendMessage({
             "embed": {
-              "description": "ㅤㅤㅤㅤㅤㅤㅤ**:fire: Comandos de Músicas :fire:**ㅤㅤㅤㅤㅤㅤㅤ\nㅤ\n**Todos os Comandos:**",
+              "description": "ㅤㅤㅤㅤㅤㅤㅤ**:musical_note:  Comandos de Músicas  :musical_note: ㅤㅤㅤㅤㅤㅤ\nㅤ\n**Todos os Comandos:**",
               "color": 16711680,
               "thumbnail": {
-                "url": "https://i.imgur.com/AjAfhx7.png"
+                "url": "https://i.imgur.com/iVn9gsZ.jpg"
               },
               "fields": [
                 {
                   "name": ":fire: Sagiri:",
                   "value": "**-** ;tocar\n**-** ;pular\n**-** ;pausar\n**-** ;retomar\n**-** ;volume\n**-** ;votar",
                   "inline": true
-                },
-                {
-                  "name": ":fire: Himebot:",
-                  "value": "**-** .play\n**-** .jumpto\n**-** .pause\n**-** .stop\n**-** .resume\n**-** .voteskip",
-                  "inline": true
-                },
-                {
-                  "name": ":fire: Loritta:",
-                  "value": "**-** +tocar\n**-** +pular\n**-** +pausar\n**-** +np",
-                  "inline": true
+             
                 }
               ]
             }
