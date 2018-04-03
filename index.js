@@ -11,7 +11,7 @@ const prefix = "-"
 const token = process.env.token;
 
 client.on('guildMemberAdd', member => {
-    client.guilds.get(member.guild.id).channels.get("430452282098843658").send(`Olá ${member}, Obrigado por entrar no **Player South - Brasil** Leia as regras e tenha uma boa estadia. `);
+    client.guilds.get(member.guild.id).channels.get("426712660453752872").send(`kk eae ${member}, Bem-vindo ao Servidor do Noobs, Espero que curta o servidor. :fumante:  `);
    })
 
 client.on("ready", () => {
@@ -31,7 +31,7 @@ client.on("ready", () => {
 
     const membrosNomes = string
     var statusIDO = ["idle", "dnd", "online", ]
-    var jogando = [`Digite -ajuda os comandos.`, `Divulgue o servidor pros parças, use: -convite`, `Visite o Canal da Twitch do Noobs use: -twitch`, `Entre no servidor do nosso Parceiro, use: -player`, `Para receber cargos de jogos, utilize a sala registro`, `Servidor do Noobs - Brasil ${client.users.size} membros. `,] 
+    var jogando = [`Digite -ajuda os comandos.`, `Divulgue o servidor pros parças, use: -convite`, `Visite o Canal da Twitch do Noobs use: -twitch`, `Entre no servidor do nosso Parceiro, use: -player`, `Para receber cargos de jogos, utilize a sala registro`, `Servidor do Noobs ${client.users.size} membros. `,] 
 
     console.log(`Conectado !`)
     setTimeout(function() {
