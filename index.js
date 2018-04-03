@@ -64,7 +64,7 @@ client.on("message", (message) => {
     if(message.content.startsWith(prefix + "ajuda")){
         message.channel.sendMessage({
             "embed": {
-              "description": "ㅤㅤㅤㅤㅤㅤ**:pushpin:  HELP  :pushpin: ㅤㅤㅤㅤㅤㅤ\nㅤ\n**Comandos**:\n-musicas\n-twitch\n-convite\n-avatar\n-player",
+              "description": "ㅤㅤㅤㅤㅤㅤ**:pushpin:  HELP  :pushpin:** ㅤㅤㅤㅤㅤㅤ\nㅤ\n**Comandos:**\n-musicas\n-twitch\n-convite\n-avatar\n-player",
               "color": 16711680,
               "thumbnail": {
                 "url": "https://imgur.com/b733f0a5-5b66-4066-81e9-47afcb37e4df"
@@ -103,7 +103,7 @@ client.on("message", (message) => {
     if(message.content.startsWith(prefix + "musicas")){
         message.channel.sendMessage({
             "embed": {
-              "description": "ㅤㅤㅤㅤㅤㅤㅤ**:musical_note:  Comandos de Músicas  :musical_note: ㅤㅤㅤㅤㅤㅤ\nㅤ\n**Todos os Comandos:**",
+              "description": "ㅤㅤㅤㅤㅤㅤㅤ**:musical_note:  Comandos de Músicas  :musical_note:** ㅤㅤㅤㅤㅤㅤ\nㅤ\n**Todos os Comandos:**",
               "color": 16711680,
               "thumbnail": {
                 "url": "https://i.imgur.com/iVn9gsZ.jpg"
