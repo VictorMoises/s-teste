@@ -14,7 +14,7 @@ const token = process.env.token;
 
 client.on('guildMemberAdd', member => {
     client.guilds.get(member.guild.id).channels.get("426712660453752872").send(`kk eae ${member}, Bem-vindo ao **Servidor do Noobs,** Espero que curta o servidor.  `);
-   });
+   })
 
 client.on("ready", () => {
 
