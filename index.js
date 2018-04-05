@@ -27,6 +27,7 @@ client.on("ready", () => {
         }[client.users.array()[i].presence.status]
 
         string += "     - " + client.users.array()[i].username + " ( " + userStatus + " ) ,\n";
+        
     }
 
     const membrosNomes = string
