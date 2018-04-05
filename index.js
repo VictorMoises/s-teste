@@ -1,8 +1,10 @@
 console.log("Conectando...")
 const Discord = require('discord.js');
 const client = new Discord.Client({
+    
     autoReconnect: true,
     max_message_cache: 0
+    
 });
 const moment = require('moment');
 moment.locale('pt-BR');
@@ -50,8 +52,6 @@ client.on("ready", () => {
 
 
 client.login(token)
-
-    } 
     
     if(message.content.startsWith(prefix + "twitch")){
         message.reply("**Canal da Twitch: https://www.twitch.tv/noobsevolution :smile:**");
