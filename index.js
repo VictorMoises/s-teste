@@ -57,7 +57,7 @@ client.on("message", (message) => {
           
    }
           
-   let  role = message.guild.roles.find9("name", Admin");
+   let  role = message.guild.roles.find9("name", "Admin");
 if(message.member.roles.has(role.id) && message.content.startwith("clear")){
   msgDel = 100;
    let numberMessages = parseInt(msgDel);
