@@ -114,9 +114,11 @@ client.on("message", (message) => {
                   "name": ":fire: Sagiri:",
                   "value": "**-** ;tocar\n**-** ;pular\n**-** ;pausar\n**-** ;retomar\n**-** ;volume\n**-** ;votar",
                   "inline": true
-             
-                }
-              ]
-            }
+                  }
+               ]
+             }
           });
- 
+    }
+
+})
+
