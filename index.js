@@ -53,14 +53,15 @@ client.login(token)
 
 client.on("message", (message) => {
     
-    let  role = message.guild.roles.find9("name", Admin");
-if(message.member.roles.has(role.id) && message.content.startwith("-clear")){
+     }
+          
+   }
+          
+   let  role = message.guild.roles.find9("name", Admin");
+if(message.member.roles.has(role.id) && message.content.startwith("clear")){
   msgDel = 100;
    let numberMessages = parseInt(msgDel);
    message.channel.fetchMessages({limit: numberMessages}}.then(messages => message.channel.bulkDelete(messages));
-        
-    }
-
     if(message.content.startsWith(prefix + "twitch")){
         message.reply("**Canal da Twitch: https://www.twitch.tv/noobsevolution :smile:**");
     }
