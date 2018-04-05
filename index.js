@@ -50,7 +50,9 @@ client.on("ready", () => {
 
 
 client.login(token)
- 
+
+    } 
+    
     if(message.content.startsWith(prefix + "twitch")){
         message.reply("**Canal da Twitch: https://www.twitch.tv/noobsevolution :smile:**");
     }
