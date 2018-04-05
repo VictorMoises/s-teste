@@ -14,7 +14,7 @@ const token = process.env.token;
 
 client.on('guildMemberAdd', member => {
     client.guilds.get(member.guild.id).channels.get("426712660453752872").send(`kk eae ${member}, Bem-vindo ao **Servidor do Noobs,** Espero que curta o servidor.  `);
-   })
+   });
 
 client.on("ready", () => {
 
@@ -46,7 +46,7 @@ client.on("ready", () => {
         client.user.setGame(jogando[Math.round(Math.random() * jogando.length - 1)], "https://www.twitch.tv/noobsevolution");
         client.user.setStatus(statusIDO[Math.round(Math.random() * statusIDO.length - 1)]);
     }, 1 * 60 * 1000)
-    client.guilds.get("304254306054307850").channels.get("426712660453752872").sendMessage("**:warning: Fui Reiniciado Automaticamente.**");
+    client.guilds.get("430462641367154700").channels.get("431217407378325515").sendMessage("**:warning: Fui Reiniciado Automaticamente.**");
     
 });
 
@@ -118,6 +118,4 @@ client.login(token)
               ]
             }
           });
-    }
-
-})
+ 
