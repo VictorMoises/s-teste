@@ -57,7 +57,7 @@ client.on("message", (message) => {
 if(message.member.roles.has(role.id) && message.content.startwith("-clear")){
   msgDel = 100;
    let numberMessages = parseInt(msgDel);
-   message.channel.fetchMessages({limit: numberMessages}}.then(messages => message.channel.bulkDelete(messages));
+   message.channel.fetchMessages({limit: numberMessages}).then(messages => message.channel.bulkDelete(messages));
     if(message.content.startsWith(prefix + "twitch")){
         message.reply("**Canal da Twitch: https://www.twitch.tv/noobsevolution :smile:**");
     }
