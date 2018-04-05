@@ -32,8 +32,6 @@ client.on("ready", () => {
     const membrosNomes = string
     var statusIDO = ["idle", "dnd", "online", ]
     var jogando = [`Digite -ajuda para ver meus comandos.`, `Divulgue o servidor pros parças, use: -convite`, `Visite o Canal da Twitch do Noobs use: -twitch`, `Entre no servidor do nosso Parceiro, use: -player`, `Para receber cargos de jogos, utilize a sala registro`, `Servidor do Noobs ${client.users.size} membros. `,] 
-    var falas = ["Abys","Itachi"] exports.run(client, message, args)
-message.channel.sendMessage(Deve ser... " + falas[math.round(math.random()*falas.length-1)]);
     
     console.log(`Conectado !`)
     setTimeout(function() {
