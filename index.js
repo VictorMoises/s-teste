@@ -45,7 +45,7 @@ client.on("ready", () => {
         client.user.setGame(jogando[Math.round(Math.random() * jogando.length - 1)], "https://www.twitch.tv/noobsevolution");
         client.user.setStatus(statusIDO[Math.round(Math.random() * statusIDO.length - 1)]);
     }, 1 * 60 * 1000)
-    client.guilds.get("430462641367154700").channels.get("431217407378325515").sendMessage("**:warning: Fui Reiniciado Automaticamente.**");
+    client.guilds.get("430462641367154700").channels.get("432007945673506826").sendMessage("**:warning: Fui Reiniciado Automaticamente.**");
     
 });
 
