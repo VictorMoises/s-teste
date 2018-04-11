@@ -40,7 +40,7 @@ client.on("message", (message) => {
           "description": "**" + message.mentions.users.first().username + "**",
           "color": 16711680,
           "image": {
-          "message.reply("Aqui está seu Avatar")
+          ("message.reply("Aqui está seu Avatar")
           }
        }
   });
