@@ -31,13 +31,13 @@ client.on("message", (message) => {
           "description": "**" + message.author.username + "**",
           "color": 16711680,
           "image": {
-          message.reply("Aqui está seu Avatar")
             "url": message.author.displayAvatarURL
           }
         }
       });
       message.channel.sendMessage({
         "embed": {
+          message.reply("Aqui está seu Avatar")
           "description": "**" + message.mentions.users.first().username + "**",
           "color": 16711680,
           "image": {
