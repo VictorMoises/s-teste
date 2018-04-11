@@ -37,10 +37,10 @@ client.on("message", (message) => {
       });
       message.channel.sendMessage({
         "embed": {
-          message.reply("Aqui está seu Avatar")
           "description": "**" + message.mentions.users.first().username + "**",
           "color": 16711680,
           "image": {
+          "message.reply("Aqui está seu Avatar")
           }
        }
   });
