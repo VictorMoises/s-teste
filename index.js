@@ -5,6 +5,7 @@ const client = new Discord.Client({
      max_message_cache: 0
     
 });
+
 const moment = require('moment');
 moment.locale('pt-BR');
 
@@ -13,7 +14,6 @@ const token = process.env.token;
 
 client.on('guildMemberAdd', member => {
     client.guilds.get(member.guild.id).channels.get("432007945673506826").send(`Olá {user} Bem-Vindo ao Servidor **VDD** Espero que Curta o Servidor. `);
-   })
         
     
 });
