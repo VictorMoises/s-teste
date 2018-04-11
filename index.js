@@ -22,8 +22,6 @@ client.login(token)
 
 
 client.on("message", (message) => {
-     
-    }
 
     if(message.content.startsWith(prefix + "avatar")){
         let user = message.mentions.users.first(); 
