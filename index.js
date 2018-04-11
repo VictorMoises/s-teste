@@ -12,7 +12,7 @@ const prefix = "-"
 const token = process.env.token;
 
 client.on('guildMemberAdd', member => {
-    client.guilds.get(member.guild.id).channels.get("431316521936224260").send(`Olá {user} Bem-Vindo ao Servidor **VDD** Espero que Curta o Servidor. `);
+    client.guilds.get(member.guild.id).channels.get("432007945673506826").send(`Olá {user} Bem-Vindo ao Servidor **VDD** Espero que Curta o Servidor. `);
    })
         
     
